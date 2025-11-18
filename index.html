@@ -30,7 +30,14 @@
 
     <!-- Favicon y preloads críticos -->
     <link rel="icon" type="image/webp" href="https://i.ibb.co/xtQTkZQV/huna-estudios-favicon.webp">
-    <link rel="preload" href="https://i.ibb.co/Q7KB5CnF/Marketing-Huna-Estudios.webp" as="image" media="(min-width: 768px)">
+    
+    <!-- PRELOAD CRÍTICO PARA LA IMAGEN DEL HERO - ALTA PRIORIDAD -->
+    <link rel="preload" href="https://i.ibb.co/Q7KB5CnF/Marketing-Huna-Estudios.webp" as="image" fetchpriority="high">
+    
+    <!-- Preloads para otras imágenes importantes -->
+    <link rel="preload" href="https://i.ibb.co/8LLgMHry/logo-huna-1.webp" as="image">
+    
+    <!-- Preloads para CSS externo -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <!-- Preconnect -->
@@ -293,16 +300,51 @@
             color: var(--white);
         }
 
-        /* Hero Section */
+        /* Hero Section - ESTILOS OPTIMIZADOS */
         .hero {
             height: 100vh;
             display: flex;
             align-items: center;
-            background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%), url('https://i.ibb.co/Q7KB5CnF/Marketing-Huna-Estudios.webp');
-            background-size: cover;
-            background-position: center;
             position: relative;
             overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-color: var(--black);
+            transition: opacity 0.5s ease;
+        }
+
+        .hero-bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .hero-bg-image.loaded {
+            opacity: 1;
+        }
+
+        .hero-bg-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%);
+            z-index: 1;
         }
 
         .hero-content {
@@ -310,6 +352,8 @@
             align-items: center;
             justify-content: space-between;
             gap: 50px;
+            position: relative;
+            z-index: 2;
         }
 
         .hero-text {
@@ -1016,10 +1060,6 @@
                 min-height: 100vh;
                 display: flex;
                 align-items: center;
-                background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%), url('https://i.ibb.co/Q7KB5CnF/Marketing-Huna-Estudios.webp');
-                background-size: cover;
-                background-position: center;
-                background-attachment: scroll;
             }
 
             .testimonials-slider {
@@ -1177,6 +1217,11 @@
     </header>
 
     <section class="hero" id="home">
+        <!-- Fondo optimizado para carga prioritaria -->
+        <div class="hero-bg">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-bg-image" id="hero-bg-image"></div>
+        </div>
         <div class="container hero-content">
             <div class="hero-text">
                 <h1>Integra el Marketing <span class="highlight">DENTRO</span> de tu Empresa</h1>
@@ -1187,7 +1232,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="https://i.ibb.co/Q7KB5CnF/Marketing-Huna-Estudios.webp" alt="Equipo de Huna Estudios desarrollando estrategias de marketing integrado para empresas" width="400" height="400" loading="eager">
+                <img src="https://i.ibb.co/Q7KB5CnF/Marketing-Huna-Estudios.webp" alt="Equipo de Huna Estudios desarrollando estrategias de marketing integrado para empresas" width="400" height="400" loading="lazy" fetchpriority="low">
             </div>
         </div>
     </section>
@@ -1476,6 +1521,26 @@
     <script>
         // === SCRIPTS ===
         document.addEventListener('DOMContentLoaded', function () {
+            // === CARGA PRIORITARIA DE IMAGEN DEL HERO ===
+            const heroBgImage = document.getElementById('hero-bg-image');
+            if (heroBgImage) {
+                // Crear una nueva imagen para precargar
+                const img = new Image();
+                img.src = 'https://i.ibb.co/Q7KB5CnF/Marketing-Huna-Estudios.webp';
+                
+                // Cuando la imagen se cargue, aplicarla como fondo
+                img.onload = function() {
+                    heroBgImage.style.backgroundImage = `url('${img.src}')`;
+                    heroBgImage.classList.add('loaded');
+                };
+                
+                // Si hay un error, intentar cargar una versión de respaldo
+                img.onerror = function() {
+                    console.warn('No se pudo cargar la imagen del hero, intentando con respaldo...');
+                    // Aquí podrías intentar cargar una imagen de respaldo si tienes una
+                };
+            }
+
             const hamburger = document.getElementById('hamburger');
             const navMenu = document.getElementById('nav-menu');
             const navLinks = document.querySelectorAll('.nav-link');
