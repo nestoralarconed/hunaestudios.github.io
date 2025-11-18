@@ -30,13 +30,13 @@
 
     <!-- Favicon y preloads críticos -->
     <link rel="icon" type="image/webp" href="https://i.ibb.co/xtQTkZQV/huna-estudios-favicon.webp">
-    
+
     <!-- PRELOAD CRÍTICO PARA LA IMAGEN DEL HERO - ALTA PRIORIDAD -->
     <link rel="preload" href="https://i.ibb.co/Q7KB5CnF/Marketing-Huna-Estudios.webp" as="image" fetchpriority="high">
-    
+
     <!-- Preloads para otras imágenes importantes -->
     <link rel="preload" href="https://i.ibb.co/8LLgMHry/logo-huna-1.webp" as="image">
-    
+
     <!-- Preloads para CSS externo -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
@@ -333,9 +333,9 @@
             transition: opacity 0.8s ease;
         }
 
-        .hero-bg-image.loaded {
-            opacity: 1;
-        }
+            .hero-bg-image.loaded {
+                opacity: 1;
+            }
 
         .hero-bg-overlay {
             position: absolute;
@@ -658,6 +658,17 @@
                 font-size: 0.9rem;
             }
 
+        .portfolio-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            height: 100%;
+        }
+
+        .portfolio-overlay .btn {
+            pointer-events: none; 
+        }
+
         /* Testimonials Section */
         .testimonials-slider {
             max-width: 800px;
@@ -889,6 +900,28 @@
 
             .contact-link:hover::after {
                 width: 100%;
+            }
+
+        .contact-icon-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+            .contact-icon-link:hover {
+                text-decoration: none;
+                color: inherit;
+            }
+
+        .contact-title-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+            .contact-title-link:hover {
+                text-decoration: none;
+                color: inherit;
             }
 
         /* Footer */
@@ -1371,40 +1404,48 @@
             </div>
             <div class="portfolio-grid">
                 <div class="portfolio-item" data-category="fotografia">
-                    <div class="portfolio-image">
-                        <img src=" https://i.ibb.co/Df7ttdYp/Valentina-XV.webp " alt="Proyecto de fotografía profesional para XV años de Valentina - Huna Estudios" width="600" height="400" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <a href="projects/valentina-xv.html" class="btn">Ver Detalles</a>
+                    <a href="projects/valentina-xv.html" class="portfolio-link">
+                        <div class="portfolio-image">
+                            <img src="https://i.ibb.co/Df7ttdYp/Valentina-XV.webp" alt="Proyecto de fotografía profesional para XV años de Valentina - Huna Estudios" width="600" height="400" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <span class="btn">Ver Detalles</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Valentina's XV</h3>
-                        <p>Fotografía</p>
-                    </div>
+                        <div class="portfolio-info">
+                            <h3>Valentina's XV</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </a>
                 </div>
+
                 <div class="portfolio-item" data-category="contenido">
-                    <div class="portfolio-image">
-                        <img src=" https://i.ibb.co/xSnBzgF3/comiendo-buenavista.webp" alt="Creación de contenido para Buenavista Bread - Proyecto Huna Estudios" width="600" height="400" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <a href="projects/buenavista-bread.html" class="btn">Ver Detalles</a>
+                    <a href="projects/buenavista-bread.html" class="portfolio-link">
+                        <div class="portfolio-image">
+                            <img src="https://i.ibb.co/xSnBzgF3/comiendo-buenavista.webp" alt="Creación de contenido para Buenavista Bread - Proyecto Huna Estudios" width="600" height="400" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <span class="btn">Ver Detalles</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Buenavista Bread</h3>
-                        <p>Creación de Contenido</p>
-                    </div>
+                        <div class="portfolio-info">
+                            <h3>Buenavista Bread</h3>
+                            <p>Creación de Contenido</p>
+                        </div>
+                    </a>
                 </div>
+
                 <div class="portfolio-item" data-category="social">
-                    <div class="portfolio-image">
-                        <img src="https://i.ibb.co/vxRybmm9/Terjamanco-bote.webp" alt="Gestión de redes sociales para Terjamanco - Campaña Huna Estudios" width="600" height="400" loading="lazy">
-                        <div class="portfolio-overlay">
-                            <a href="projects/termas-de-jamanco.html" class="btn">Ver Detalles</a>
+                    <a href="projects/termas-de-jamanco.html" class="portfolio-link">
+                        <div class="portfolio-image">
+                            <img src="https://i.ibb.co/vxRybmm9/Terjamanco-bote.webp" alt="Gestión de redes sociales para Terjamanco - Campaña Huna Estudios" width="600" height="400" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <span class="btn">Ver Detalles</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Termas de Jamanco</h3>
-                        <p>Redes Sociales</p>
-                    </div>
+                        <div class="portfolio-info">
+                            <h3>Termas de Jamanco</h3>
+                            <p>Redes Sociales</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -1476,25 +1517,36 @@
                                 <p>Quito, Ecuador</p>
                             </div>
                         </div>
+
                         <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
+                            <a href="mailto:hunaestudios@gmail.com" class="contact-icon-link" target="_blank" rel="noopener noreferrer">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                            </a>
                             <div class="contact-details">
-                                <h3>Email</h3>
+                                <a href="mailto:hunaestudios@gmail.com" class="contact-title-link" target="_blank" rel="noopener noreferrer">
+                                    <h3>Email</h3>
+                                </a>
                                 <p><a href="mailto:hunaestudios@gmail.com" class="contact-link" target="_blank" rel="noopener noreferrer">hunaestudios@gmail.com</a></p>
                             </div>
                         </div>
+
                         <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
+                            <a href="https://wa.me/593988414057" class="contact-icon-link" target="_blank" rel="noopener noreferrer">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                            </a>
                             <div class="contact-details">
-                                <h3>Teléfono</h3>
+                                <a href="https://wa.me/593988414057" class="contact-title-link" target="_blank" rel="noopener noreferrer">
+                                    <h3>Teléfono</h3>
+                                </a>
                                 <p><a href="https://wa.me/593988414057" class="contact-link" target="_blank" rel="noopener noreferrer">+593 98 841 4057</a></p>
                             </div>
                         </div>
                     </div>
+
                     <div class="social-links">
                         <a href="https://www.instagram.com/hunaestudios" class="social-link" target="_blank" rel="noopener nofollow" aria-label="Síguenos en Instagram"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.linkedin.com/company/107193838/" class="social-link" target="_blank" rel="noopener nofollow" aria-label="Conéctate en LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -1527,15 +1579,15 @@
                 // Crear una nueva imagen para precargar
                 const img = new Image();
                 img.src = 'https://i.ibb.co/Q7KB5CnF/Marketing-Huna-Estudios.webp';
-                
+
                 // Cuando la imagen se cargue, aplicarla como fondo
-                img.onload = function() {
+                img.onload = function () {
                     heroBgImage.style.backgroundImage = `url('${img.src}')`;
                     heroBgImage.classList.add('loaded');
                 };
-                
+
                 // Si hay un error, intentar cargar una versión de respaldo
-                img.onerror = function() {
+                img.onerror = function () {
                     console.warn('No se pudo cargar la imagen del hero, intentando con respaldo...');
                     // Aquí podrías intentar cargar una imagen de respaldo si tienes una
                 };
