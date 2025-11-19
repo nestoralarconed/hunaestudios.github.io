@@ -627,7 +627,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(230, 57, 70, 0.9);
+            background: linear-gradient(135deg, rgba(230, 57, 70, 0.9) 0%, rgba(214, 40, 40, 0.9) 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -666,7 +666,14 @@
         }
 
         .portfolio-overlay .btn {
-            pointer-events: none; 
+            pointer-events: none;
+            background: var(--black) !important; /* Forzar color negro */
+            color: var(--white) !important;
+        }
+
+        .portfolio-overlay .btn:hover {
+            background: var(--white) !important;
+            color: var(--black) !important;
         }
 
         /* Testimonials Section */

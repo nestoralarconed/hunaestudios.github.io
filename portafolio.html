@@ -365,11 +365,11 @@
             cursor: pointer;
             border: 1px solid var(--border-color);
             background: var(--gray-dark);
-            transition: var(--transition);
+            transition: var(--transition); 
         }
 
         .portfolio-vento-item:hover {
-            transform: translateY(-10px);
+            transform: translateY(-10px) scale(1);
             border-color: var(--red);
             box-shadow: 0 15px 30px rgba(230, 57, 70, 0.2);
         }
@@ -860,7 +860,7 @@
                 </div>
 
                 <!-- Proyecto 5 - UpWear -->
-                <div class="portfolio-vento-item" data-category="branding">
+                <div class="portfolio-vento-item" data-category="branding fotografia">
                     <a href="projects/upwear.html" class="portfolio-vento-link">
                         <div class="portfolio-vento-image">
                             <img src="https://i.ibb.co/hFhS8LkF/upwear-portafolio.webp" alt="Gestión de redes sociales para marca de ropa UpWear - Huna Estudios" width="400" height="250" loading="lazy">
@@ -1002,35 +1002,24 @@
                 window.addEventListener('scroll', handleScroll);
             }
 
-            // === FILTROS DE PORTAFOLIO ===
+            // Filtros del portafolio
             const filterBtns = document.querySelectorAll('.filter-btn');
             const portfolioItems = document.querySelectorAll('.portfolio-vento-item');
 
             if (filterBtns.length > 0 && portfolioItems.length > 0) {
                 filterBtns.forEach(btn => {
                     btn.addEventListener('click', () => {
-                        // Remover active de todos los botones
                         filterBtns.forEach(item => item.classList.remove('active'));
-                        // Agregar active al botón clickeado
                         btn.classList.add('active');
-                        
                         const filter = btn.getAttribute('data-filter');
-                        
-                        // Filtrar items
                         portfolioItems.forEach(item => {
-                            if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            const categories = item.getAttribute('data-category').split(' ');
+                            const shouldShow = filter === 'all' || categories.includes(filter);
+
+                            if (shouldShow) {
                                 item.style.display = 'block';
-                                // Animación de aparición
-                                setTimeout(() => {
-                                    item.style.opacity = '1';
-                                    item.style.transform = 'translateY(0)';
-                                }, 100);
                             } else {
-                                item.style.opacity = '0';
-                                item.style.transform = 'translateY(20px)';
-                                setTimeout(() => {
-                                    item.style.display = 'none';
-                                }, 300);
+                                item.style.display = 'none';
                             }
                         });
                     });
