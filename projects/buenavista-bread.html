@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -351,7 +350,7 @@
         .cover-image {
             width: 100%;
             height: 70vh;
-            background: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80') center/cover no-repeat;
+            background: url('https://i.ibb.co/Y4y29f8q/letrero-buenavista.webp') center/cover no-repeat;
             position: relative;
             display: flex;
             align-items: flex-end;
@@ -597,29 +596,98 @@
 
         .gallery-item {
             position: relative;
-            border-radius: var(--border-radius);
+            border-radius: 8px;
             overflow: hidden;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--border-color);
-            aspect-ratio: 1;
+            box-shadow: 0 5px 15px rgba(230, 57, 70, 0.1);
+            border: 1px solid #333;
             background-size: cover;
             background-position: center;
-            transition: var(--transition);
+            transition: all 0.3s ease;
         }
+
+            .gallery-item:nth-child(1),
+            .gallery-item:nth-child(2),
+            .gallery-item:nth-child(3) {
+                aspect-ratio: 4 / 5;
+            }
+
+            .gallery-item:nth-child(4),
+            .gallery-item:nth-child(5),
+            .gallery-item:nth-child(6) {
+                aspect-ratio: 9 / 16;
+            }
 
             .gallery-item:hover {
                 transform: translateY(-5px);
             }
 
+            /* Contenedor para iframes de YouTube */
+            .gallery-item iframe {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+                z-index: 1;
+            }
+
         .gallery-placeholder {
-            width: 100%;
-            height: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            padding: 20px;
+            color: white;
+            font-weight: 600;
+            background: linear-gradient(to top, rgba(10, 10, 10, 0.9), transparent);
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 0.3s ease;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .video-thumbnail {
+            cursor: pointer;
+            position: relative;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background: rgba(230, 57, 70, 0.9);
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--gray-light-text);
-            font-weight: 600;
-            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+            transition: var(--transition);
+        }
+
+            .play-button i {
+                color: white;
+                font-size: 2rem;
+                margin-left: 5px;
+            }
+
+        .video-thumbnail:hover .play-button {
+            background: var(--red);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .gallery-item.video-item .gallery-placeholder {
+            display: none;
+        }
+
+        .gallery-item:hover .gallery-placeholder {
+            transform: translateY(0);
+            opacity: 1;
         }
 
         /* Footer */
@@ -750,6 +818,25 @@
             .two-column {
                 grid-template-columns: 1fr;
             }
+
+            /* NUEVO - Gallery en 1 columna manteniendo proporciones */
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* Las 3 primeras mantienen formato 4:5 en móvil */
+            .gallery-item:nth-child(1),
+            .gallery-item:nth-child(2),
+            .gallery-item:nth-child(3) {
+                aspect-ratio: 4 / 5;
+            }
+
+            /* Las 3 últimas mantienen formato 9:16 en móvil */
+            .gallery-item:nth-child(4),
+            .gallery-item:nth-child(5),
+            .gallery-item:nth-child(6) {
+                aspect-ratio: 9 / 16;
+            }
         }
 
         @media (max-width: 576px) {
@@ -879,7 +966,7 @@
                     </ul>
                 </div>
                 <div class="column-image">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Cliente" loading="lazy">
+                    <img src="https://i.ibb.co/35S8FwQF/quien-es-buenavista.webp" alt="Clientes Buenavista" loading="lazy">
                 </div>
             </div>
         </div>
@@ -919,23 +1006,55 @@
                 <p>Selección de trabajos visuales más impactantes de la campaña</p>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80')">
-                    <div class="gallery-placeholder">Social Media Post</div>
+                <!-- Primera imagen -->
+                <div class="gallery-item"
+                     style="background-image: url('https://i.ibb.co/bgc9zf1X/buenavista-1.webp');"
+                     aria-label="Tostadas en pan de masa madre">
+                    <div class="gallery-placeholder">Tostadas en pan de masa madre</div>
                 </div>
-                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80')">
-                    <div class="gallery-placeholder">Display Ad</div>
+
+                <!-- Segunda imagen -->
+                <div class="gallery-item"
+                     style="background-image: url('https://i.ibb.co/DDttYQPW/buenavista-2.webp');"
+                     aria-label="Smoothies">
+                    <div class="gallery-placeholder">Smoothies</div>
                 </div>
-                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80')">
-                    <div class="gallery-placeholder">Video Campaign</div>
+
+                <!-- Tercera imagen -->
+                <div class="gallery-item"
+                     style="background-image: url('https://i.ibb.co/h1JCb7Mt/buenavista-3.webp');"
+                     aria-label="Copa de frutas">
+                    <div class="gallery-placeholder">Copa de frutas</div>
                 </div>
-                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1634942537034-2531766767d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1228&q=80')">
-                    <div class="gallery-placeholder">Brand Identity</div>
+
+                <!-- Segundo video -->
+                <div class="gallery-item">
+                    <iframe src="https://www.youtube.com/embed/wYoDPU1_-6U?rel=0&modestbranding=1&loop=1&playlist=wYoDPU1_-6U"
+                            title="Video 2"
+                            frameborder="0"
+                            allow="autoplay; encrypted-media; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
                 </div>
-                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80')">
-                    <div class="gallery-placeholder">Email Template</div>
+
+                <!-- Segundo video -->
+                <div class="gallery-item">
+                    <iframe src="https://www.youtube.com/embed/wYoDPU1_-6U?rel=0&modestbranding=1&loop=1&playlist=wYoDPU1_-6U"
+                            title="Video 2"
+                            frameborder="0"
+                            allow="autoplay; encrypted-media; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
                 </div>
-                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1558655146-364adaf1fcc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80')">
-                    <div class="gallery-placeholder">Landing Page</div>
+
+                <!-- Tercer video -->
+                <div class="gallery-item">
+                    <iframe src="https://www.youtube.com/embed/KaeVKgIYmkc?rel=0&modestbranding=1&loop=1&playlist=KaeVKgIYmkc"
+                            title="Video 3"
+                            frameborder="0"
+                            allow="autoplay; encrypted-media; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
                 </div>
             </div>
         </div>
@@ -1050,4 +1169,3 @@
     </script>
 </body>
 </html>
-```
