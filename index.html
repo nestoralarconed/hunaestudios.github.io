@@ -17,7 +17,7 @@
     <meta property="og:url" content="https://hunaestudios.github.io/">
     <meta property="og:title" content="Huna Estudios | Agencia de Marketing Integrado en Quito, Ecuador">
     <meta property="og:description" content="Agencia de marketing digital en Quito. Gestión de redes sociales, creación de contenido, fotografía y estrategias integradas para PYMES.">
-    <meta property="og:image" content="https://i.ibb.co/Q7KB5CnF/Marketing-Huna-Estudios.webp">
+    <meta property="og:image" content="https://hunaestudios.github.io/assets/img/global/Marketing-Huna-Estudios.webp">
     <meta property="og:image:alt" content="Equipo de Huna Estudios trabajando en estrategias de marketing digital">
     <meta property="og:site_name" content="Huna Estudios">
     <meta property="og:locale" content="es_EC">
@@ -26,25 +26,19 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Huna Estudios | Agencia de Marketing Digital en Quito">
     <meta name="twitter:description" content="Agencia de marketing que se integra a tu equipo. Redes sociales, contenido y estrategia para PYMES en Ecuador.">
-    <meta name="twitter:image" content="https://i.ibb.co/Q7KB5CnF/Marketing-Huna-Estudios.webp">
+    <meta name="twitter:image" content="https://hunaestudios.github.io/assets/img/global/Marketing-Huna-Estudios.webp">
 
     <!-- Favicon y preloads críticos -->
-    <link rel="icon" type="image/webp" href="https://i.ibb.co/xtQTkZQV/huna-estudios-favicon.webp">
+    <link rel="icon" type="image/webp" href="assets/img/global/huna-estudios-favicon.webp">
 
-    <!-- PRELOAD CRÍTICO PARA LA IMAGEN DEL HERO - ALTA PRIORIDAD -->
-    <link rel="preload" href="https://i.ibb.co/Q7KB5CnF/Marketing-Huna-Estudios.webp" as="image" fetchpriority="high">
-
-    <!-- Preloads para otras imágenes importantes -->
-    <link rel="preload" href="https://i.ibb.co/8LLgMHry/logo-huna-1.webp" as="image">
-
-    <!-- Preloads para CSS externo -->
+    <!-- Preloads -->
+    <link rel="preload" href="assets/img/global/Marketing-Huna-Estudios.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="assets/img/global/logo-huna-1.webp" as="image">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <!-- Preconnect -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://i.ibb.co">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    <link rel="dns-prefetch" href="https://i.ibb.co">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
@@ -56,7 +50,7 @@
             "@type": "MarketingAgency",
             "name": "Huna Estudios",
             "url": "https://hunaestudios.github.io/",
-            "logo": "https://i.ibb.co/8LLgMHry/logo-huna-1.webp",
+            "logo": "https://hunaestudios.github.io/assets/img/global/logo-huna-1.webp"
             "description": "Agencia de marketing digital en Quito, Ecuador especializada en gestión de redes sociales, creación de contenido, fotografía y estrategias integradas para PYMES.",
             "address": {
                 "@type": "PostalAddress",
@@ -99,7 +93,6 @@
     </script>
 
     <style>
-        /* CSS */
         :root {
             --black: #0a0a0a;
             --red: #e63946;
@@ -211,7 +204,7 @@
                 box-shadow: var(--shadow);
             }
 
-        /* Header y Navegación */
+        /* Header */
         header {
             position: fixed;
             top: 0;
@@ -300,7 +293,7 @@
             color: var(--white);
         }
 
-        /* Hero Section - ESTILOS OPTIMIZADOS */
+        /* Hero Section */
         .hero {
             height: 100vh;
             display: flex;
@@ -462,7 +455,7 @@
             }
 
             100% {
-                transform: translateX(-1440px); /* 6 logos × 240px (180px ancho + 60px margen) */
+                transform: translateX(-1440px); 
             }
         }
 
@@ -667,14 +660,14 @@
 
         .portfolio-overlay .btn {
             pointer-events: none;
-            background: var(--black) !important; /* Forzar color negro */
+            background: var(--black) !important; 
             color: var(--white) !important;
         }
 
-        .portfolio-overlay .btn:hover {
-            background: var(--white) !important;
-            color: var(--black) !important;
-        }
+            .portfolio-overlay .btn:hover {
+                background: var(--white) !important;
+                color: var(--black) !important;
+            }
 
         /* Testimonials Section */
         .testimonials-slider {
@@ -1240,7 +1233,7 @@
     <header id="header">
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <img src="https://i.ibb.co/8LLgMHry/logo-huna-1.webp" alt="Huna Estudios - Agencia de Marketing Digital en Quito, Ecuador" loading="eager" width="112" height="28">
+                <img src="assets/img/global/logo-huna-1.webp" alt="Huna Estudios - Agencia de Marketing Digital en Quito, Ecuador" loading="eager" width="112" height="28">
             </a>
             <div class="nav-content">
                 <a href="#contact" class="btn">Contáctanos</a>
@@ -1257,7 +1250,6 @@
     </header>
 
     <section class="hero" id="home">
-        <!-- Fondo optimizado para carga prioritaria -->
         <div class="hero-bg">
             <div class="hero-bg-overlay"></div>
             <div class="hero-bg-image" id="hero-bg-image"></div>
@@ -1272,7 +1264,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="https://i.ibb.co/Q7KB5CnF/Marketing-Huna-Estudios.webp" alt="Equipo de Huna Estudios desarrollando estrategias de marketing integrado para empresas" width="400" height="400" loading="lazy" fetchpriority="low">
+                <img src="assets/img/global/Marketing-Huna-Estudios.webp" alt="Equipo de Huna Estudios desarrollando estrategias de marketing integrado para empresas" width="400" height="400" loading="lazy" fetchpriority="low">
             </div>
         </div>
     </section>
@@ -1283,41 +1275,41 @@
             <div class="clients-slider-wrapper">
                 <div class="clients-slider">
                     <div class="client-logo">
-                        <img src="https://i.ibb.co/9Bm281K/Cliente-1.webp" alt="UpWear - Cliente de marketing digital Huna Estudios" width="150" height="100" loading="lazy">
+                        <img src="assets/img/index/clientes/Cliente-1.webp" alt="UpWear - Cliente de marketing digital Huna Estudios" width="150" height="100" loading="lazy">
                     </div>
                     <div class="client-logo">
-                        <img src="https://i.ibb.co/xKSB1mm5/Cliente-2.webp" alt="Verbo - Colegio cliente de Huna Estudios estrategia digital" width="150" height="100" loading="lazy">
+                        <img src="assets/img/index/clientes/Cliente-2.webp" alt="Verbo - Colegio cliente de Huna Estudios estrategia digital" width="150" height="100" loading="lazy">
                     </div>
                     <div class="client-logo">
-                        <img src="https://i.ibb.co/fGG7cpXh/Cliente-3.webp" alt="Libertadores de America - Cliente de redes sociales Huna Estudios" width="150" height="100" loading="lazy">
+                        <img src="assets/img/index/clientes/Cliente-3.webp" alt="Libertadores de America - Cliente de redes sociales Huna Estudios" width="150" height="100" loading="lazy">
                     </div>
                     <div class="client-logo">
-                        <img src="https://i.ibb.co/7d88P8bK/Cliente-4.webp" alt="GOAT - Cliente de contenido digital Huna Estudios" width="150" height="100" loading="lazy">
+                        <img src="assets/img/index/clientes/Cliente-4.webp" alt="GOAT - Cliente de contenido digital Huna Estudios" width="150" height="100" loading="lazy">
                     </div>
                     <div class="client-logo">
-                        <img src="https://i.ibb.co/fzqZZ2nT/Cliente-5.webp" alt="Buenavista Bread - Cliente de fotografía y redes sociales Huna Estudios" width="150" height="100" loading="lazy">
+                        <img src="assets/img/index/clientes/Cliente-5.webp" alt="Buenavista Bread - Cliente de fotografía y redes sociales Huna Estudios" width="150" height="100" loading="lazy">
                     </div>
                     <div class="client-logo">
-                        <img src="https://i.ibb.co/xtr18H6M/Cliente-6.webp" alt="Terjamanco - Cliente de gestión de redes sociales Huna Estudios" width="150" height="100" loading="lazy">
+                        <img src="assets/img/index/clientes/Cliente-6.webp" alt="Terjamanco - Cliente de gestión de redes sociales Huna Estudios" width="150" height="100" loading="lazy">
                     </div>
-                    <!-- Duplicados para el efecto de bucle infinito -->
+
                     <div class="client-logo">
-                        <img src="https://i.ibb.co/9Bm281K/Cliente-1.webp" alt="UpWear - Cliente de marketing digital Huna Estudios" width="150" height="100" loading="lazy">
-                    </div>
-                    <div class="client-logo">
-                        <img src="https://i.ibb.co/xKSB1mm5/Cliente-2.webp" alt="Verbo - Colegio cliente de Huna Estudios estrategia digital" width="150" height="100" loading="lazy">
+                        <img src="assets/img/index/clientes/Cliente-1.webp" alt="UpWear - Cliente de marketing digital Huna Estudios" width="150" height="100" loading="lazy">
                     </div>
                     <div class="client-logo">
-                        <img src="https://i.ibb.co/fGG7cpXh/Cliente-3.webp" alt="Libertadores de America - Cliente de redes sociales Huna Estudios" width="150" height="100" loading="lazy">
+                        <img src="assets/img/index/clientes/Cliente-2.webp" alt="Verbo - Colegio cliente de Huna Estudios estrategia digital" width="150" height="100" loading="lazy">
                     </div>
                     <div class="client-logo">
-                        <img src="https://i.ibb.co/7d88P8bK/Cliente-4.webp" alt="GOAT - Cliente de contenido digital Huna Estudios" width="150" height="100" loading="lazy">
+                        <img src="assets/img/index/clientes/Cliente-3.webp" alt="Libertadores de America - Cliente de redes sociales Huna Estudios" width="150" height="100" loading="lazy">
                     </div>
                     <div class="client-logo">
-                        <img src="https://i.ibb.co/fzqZZ2nT/Cliente-5.webp" alt="Buenavista Bread - Cliente de fotografía y redes sociales Huna Estudios" width="150" height="100" loading="lazy">
+                        <img src="assets/img/index/clientes/Cliente-4.webp" alt="GOAT - Cliente de contenido digital Huna Estudios" width="150" height="100" loading="lazy">
                     </div>
                     <div class="client-logo">
-                        <img src="https://i.ibb.co/xtr18H6M/Cliente-6.webp" alt="Terjamanco - Cliente de gestión de redes sociales Huna Estudios" width="150" height="100" loading="lazy">
+                        <img src="assets/img/index/clientes/Cliente-5.webp" alt="Buenavista Bread - Cliente de fotografía y redes sociales Huna Estudios" width="150" height="100" loading="lazy">
+                    </div>
+                    <div class="client-logo">
+                        <img src="assets/img/index/clientes/Cliente-6.webp" alt="Terjamanco - Cliente de gestión de redes sociales Huna Estudios" width="150" height="100" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -1332,7 +1324,7 @@
             </div>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="https://i.ibb.co/GvR3QrK9/Integracion-Huna.webp" alt="Equipo de Huna Estudios colaborando en estrategia de marketing integrado para clientes" width="600" height="400" loading="lazy">
+                    <img src="assets/img/index/expertos-en-marketing.webp" alt="Equipo de Huna Estudios colaborando en estrategia de marketing integrado para clientes" width="600" height="400" loading="lazy">
                 </div>
                 <div class="about-text">
                     <h3>Expertos en Marketing Integrado</h3>
@@ -1413,7 +1405,7 @@
                 <div class="portfolio-item" data-category="fotografia">
                     <a href="projects/valentina-xv.html" class="portfolio-link">
                         <div class="portfolio-image">
-                            <img src="https://i.ibb.co/Df7ttdYp/Valentina-XV.webp" alt="Proyecto de fotografía profesional para XV años de Valentina - Huna Estudios" width="600" height="400" loading="lazy">
+                            <img src="assets/img/portafolio/covers/Valentina-XV.webp" alt="Proyecto de fotografía profesional para XV años de Valentina - Huna Estudios" width="600" height="400" loading="lazy">
                             <div class="portfolio-overlay">
                                 <span class="btn">Ver Detalles</span>
                             </div>
@@ -1428,7 +1420,7 @@
                 <div class="portfolio-item" data-category="contenido">
                     <a href="projects/buenavista-bread.html" class="portfolio-link">
                         <div class="portfolio-image">
-                            <img src="https://i.ibb.co/xSnBzgF3/comiendo-buenavista.webp" alt="Creación de contenido para Buenavista Bread - Proyecto Huna Estudios" width="600" height="400" loading="lazy">
+                            <img src="assets/img/portafolio/covers/comiendo-buenavista.webp" alt="Creación de contenido para Buenavista Bread - Proyecto Huna Estudios" width="600" height="400" loading="lazy">
                             <div class="portfolio-overlay">
                                 <span class="btn">Ver Detalles</span>
                             </div>
@@ -1443,7 +1435,7 @@
                 <div class="portfolio-item" data-category="social">
                     <a href="projects/termas-de-jamanco.html" class="portfolio-link">
                         <div class="portfolio-image">
-                            <img src="https://i.ibb.co/vxRybmm9/Terjamanco-bote.webp" alt="Gestión de redes sociales para Terjamanco - Campaña Huna Estudios" width="600" height="400" loading="lazy">
+                            <img src="assets/img/portafolio/covers/Terjamanco-bote.webp" alt="Gestión de redes sociales para Terjamanco - Campaña Huna Estudios" width="600" height="400" loading="lazy">
                             <div class="portfolio-overlay">
                                 <span class="btn">Ver Detalles</span>
                             </div>
@@ -1475,7 +1467,7 @@
                 </div>
                 <div class="testimonial-slide active">
                     <div class="testimonial-avatar">
-                        <img src="https://i.ibb.co/R4cnqrsY/jj.webp" alt="Jhamy Carillo - Asesora comercial Libertadores de América testimonio Huna Estudios" width="80" height="80" loading="lazy">
+                        <img src="assets/img/index/testimonios/jj.webp" alt="Jhamy Carillo - Asesora comercial Libertadores de América testimonio Huna Estudios" width="80" height="80" loading="lazy">
                     </div>
                     <p class="testimonial-text">"Me encantó trabajar con Huna. Son súper atentos, creativos y siempre tienen buenas ideas para mejorar los proyectos. Se nota que les apasiona lo que hacen, realmente se preocupan por que todo salga bien, y se esfuerzan porque los resultados vayan de la mano con las ideas de los clientes. ¡Los recomiendo totalmente!"</p>
                     <h4 class="testimonial-author">Jhamy Carillo</h4>
@@ -1483,7 +1475,7 @@
                 </div>
                 <div class="testimonial-slide">
                     <div class="testimonial-avatar">
-                        <img src="https://i.ibb.co/whRpBx1g/fabio.webp" alt="Fabio Armas - Gerente de Termas de Jamanco testimonio Huna Estudios" width="80" height="80" loading="lazy">
+                        <img src="assets/img/index/testimonios/fabio.webp" alt="Fabio Armas - Gerente de Termas de Jamanco testimonio Huna Estudios" width="80" height="80" loading="lazy">
                     </div>
                     <p class="testimonial-text">"La campaña de branding que desarrollaron para nosotros mejoró nuestro reconocimiento de marca. Profesionales y creativos, se sintieron como parte de nuestra empresa desde el primer día, sin duda no puedo estar más agradecido con su excelente trabajo."</p>
                     <h4 class="testimonial-author">Fabio Armas</h4>
@@ -1491,7 +1483,7 @@
                 </div>
                 <div class="testimonial-slide">
                     <div class="testimonial-avatar">
-                        <img src="https://i.ibb.co/R4Qy7v85/pablo.webp" alt="Pablo Álvarez - Rector Unidad Educativa Verbo testimonio Huna Estudios" width="80" height="80" loading="lazy">
+                        <img src="assets/img/index/testimonios/pablo.webp" alt="Pablo Álvarez - Rector Unidad Educativa Verbo testimonio Huna Estudios" width="80" height="80" loading="lazy">
                     </div>
                     <p class="testimonial-text">"Su equipo entendió perfectamente nuestra visión y la transformó en una estrategia de marketing que superó nuestras expectativas. La comunicación fue excelente durante todo el proceso y realmente se convirtieron en una extensión de nuestro equipo interno."</p>
                     <h4 class="testimonial-author">Pablo Álvarez</h4>
@@ -1583,20 +1575,16 @@
             // === CARGA PRIORITARIA DE IMAGEN DEL HERO ===
             const heroBgImage = document.getElementById('hero-bg-image');
             if (heroBgImage) {
-                // Crear una nueva imagen para precargar
                 const img = new Image();
-                img.src = 'https://i.ibb.co/Q7KB5CnF/Marketing-Huna-Estudios.webp';
+                img.src = 'assets/img/global/Marketing-Huna-Estudios.webp';
 
-                // Cuando la imagen se cargue, aplicarla como fondo
                 img.onload = function () {
                     heroBgImage.style.backgroundImage = `url('${img.src}')`;
                     heroBgImage.classList.add('loaded');
                 };
 
-                // Si hay un error, intentar cargar una versión de respaldo
                 img.onerror = function () {
                     console.warn('No se pudo cargar la imagen del hero, intentando con respaldo...');
-                    // Aquí podrías intentar cargar una imagen de respaldo si tienes una
                 };
             }
 

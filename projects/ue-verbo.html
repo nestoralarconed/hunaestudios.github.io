@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -18,7 +17,7 @@
     <meta property="og:url" content="https://hunaestudios.github.io/">
     <meta property="og:title" content="UE Verbo - Huna Estudios">
     <meta property="og:description" content="Proyecto de publicidad digital que revolucionó la presencia de marca del cliente">
-    <meta property="og:image" content="https://i.ibb.co/xSnBzgF3/comiendo-buenavista.webp">
+    <meta property="og:image" content="https://hunaestudios.github.io/assets/img/portafolio/covers/verbo-portafolio.webp">
     <meta property="og:image:alt" content="UE Verbo - Huna Estudios">
     <meta property="og:site_name" content="Huna Estudios">
     <meta property="og:locale" content="es_EC">
@@ -27,18 +26,19 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="UE Verbo | Huna Estudios">
     <meta name="twitter:description" content="Proyecto de publicidad digital que revolucionó la presencia de marca del cliente">
-    <meta name="twitter:image" content="https://i.ibb.co/xSnBzgF3/comiendo-buenavista.webp">
+    <meta name="twitter:image" content="https://hunaestudios.github.io/assets/img/portafolio/covers/verbo-portafolio.webp">
 
-    <!-- Favicon y preloads críticos -->
-    <link rel="icon" type="image/webp" href="https://i.ibb.co/xtQTkZQV/huna-estudios-favicon.webp">
-    <link rel="preload" href="https://i.ibb.co/xSnBzgF3/comiendo-buenavista.webp" as="image" media="(min-width: 768px)">
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="../assets/img/global/huna-estudios-favicon.webp">
+
+    <!-- Preloads -->
+    <link rel="preload" href="../assets/img/portafolio/covers/verbo-portafolio.webp">
+    <link rel="preload" href="../assets/img/global/logo-huna-1.webp" as="image">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <!-- Preconnect -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://i.ibb.co">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    <link rel="dns-prefetch" href="https://i.ibb.co">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
@@ -46,54 +46,41 @@
     <!-- Schema.org -->
     <script type="application/ld+json">
         {
-            "@context": "https://schema.org",
-            "@type": "MarketingAgency",
+          "@context": "https://schema.org",
+          "@type": "Project",
+          "name": "UE Verbo",
+          "description": "Manejo de redes sociales y trafficker para una Unidad Educativa Cristiana en Quito.",
+          "url": "https://hunaestudios.github.io/projects/ue-verbo.html",
+          "image": [
+            "https://hunaestudios.github.io/assets/img/portafolio/covers/verbo-portafolio.webp"
+          ],
+          "creator": {
+            "@type": "Organization",
             "name": "Huna Estudios",
             "url": "https://hunaestudios.github.io/",
-            "logo": "https://i.ibb.co/8LLgMHry/logo-huna-1.webp",
-            "description": "Agencia de marketing digital en Quito, Ecuador especializada en gestión de redes sociales, creación de contenido, fotografía y estrategias integradas para PYMES.",
-            "address": {
+            "logo": "https://hunaestudios.github.io/assets/img/global/logo-huna-1.webp"
+          },
+          "isPartOf": {
+            "@type": "CollectionPage",
+            "name": "Portafolio - Huna Estudios",
+            "url": "https://hunaestudios.github.io/portafolio.html"
+          },
+          "about": {
+            "@type": "EducationalOrganization",
+            "name": "Unidad Educativa Verbo",
+            "location": {
+              "@type": "Place",
+              "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Quito",
-                "addressRegion": "Pichincha",
-                "addressCountry": "EC",
-                "postalCode": "170135"
-            },
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+593-98-841-4057",
-                "contactType": "customer service",
-                "email": "hunaestudios@gmail.com",
-                "areaServed": "EC",
-                "availableLanguage": ["Spanish", "English"]
-            },
-            "areaServed": "Ecuador",
-            "serviceType": "Digital Marketing Services",
-            "sameAs": [
-                "https://www.instagram.com/hunaestudios",
-                "https://www.linkedin.com/company/huna-estudios",
-                "https://www.facebook.com/hunaestudios",
-                "https://www.tiktok.com/@hunaestudios"
-            ],
-            "founder": [
-                {
-                    "@type": "Person",
-                    "name": "Cristian Alarcón"
-                },
-                {
-                    "@type": "Person",
-                    "name": "Samuel Castellano"
-                }
-            ],
-            "foundingDate": "2022",
-            "employees": "5-10",
-            "priceRange": "$$",
-            "currenciesAccepted": "USD"
+                "addressCountry": "EC"
+              }
+            }
+          }
         }
     </script>
 
     <style>
-        /* CSS Variables - Huna Estudios Style */
         :root {
             --black: #0a0a0a;
             --red: #e63946;
@@ -292,7 +279,7 @@
             min-height: 100vh;
             display: flex;
             align-items: center;
-            background: linear-gradient(135deg, rgba(230, 57, 70, 0.8) 0%, rgba(214, 40, 40, 0.8) 100%), url('https://i.ibb.co/xSnBzgF3/comiendo-buenavista.webp');
+            background: linear-gradient(135deg, rgba(230, 57, 70, 0.8) 0%, rgba(214, 40, 40, 0.8) 100%), url(' ../assets/img/portafolio/covers/verbo-portafolio.webp ');
             background-size: cover;
             background-position: top;
             background-attachment: fixed;
@@ -351,7 +338,7 @@
         .cover-image {
             width: 100%;
             height: 70vh;
-            background: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80') center/cover no-repeat;
+            background: url(' ../assets/img/portafolio/ue-verbo/background-ue-verbo.webp ') center/cover no-repeat;
             position: relative;
             display: flex;
             align-items: flex-end;
@@ -489,7 +476,6 @@
             font-size: 1.1rem;
         }
 
-        /* Two Column Layout */
         .two-column {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
@@ -552,7 +538,7 @@
                 transform: scale(1.05);
             }
 
-        /* Grid Simple */
+        /* Grid */
         .simple-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -584,7 +570,6 @@
                 line-height: 1.7;
             }
 
-        /* Gallery Section */
         .gallery-section {
             background-color: var(--gray-dark);
         }
@@ -597,29 +582,116 @@
 
         .gallery-item {
             position: relative;
-            border-radius: var(--border-radius);
+            border-radius: 8px;
             overflow: hidden;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--border-color);
-            aspect-ratio: 1;
+            box-shadow: 0 5px 15px rgba(230, 57, 70, 0.1);
+            border: 1px solid #333;
             background-size: cover;
             background-position: center;
-            transition: var(--transition);
+            transition: all 0.3s ease;
         }
+
+            .gallery-item:nth-child(1),
+            .gallery-item:nth-child(2),
+            .gallery-item:nth-child(3) {
+                aspect-ratio: 4 / 5;
+            }
+
+            .gallery-item:nth-child(4),
+            .gallery-item:nth-child(5),
+            .gallery-item:nth-child(6) {
+                aspect-ratio: 9 / 16;
+            }
 
             .gallery-item:hover {
                 transform: translateY(-5px);
             }
 
+            /* Contenedor para iframes de YouTube */
+            .gallery-item iframe {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+                z-index: 1;
+            }
+
         .gallery-placeholder {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            padding: 20px;
+            color: white;
+            font-weight: 600;
+            background: linear-gradient(to top, rgba(10, 10, 10, 0.9), transparent);
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 0.3s ease;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .video-item {
+            position: relative;
+            background-color: #000;
+        }
+
+        .video-thumbnail {
+            position: relative;
             width: 100%;
             height: 100%;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background: rgba(230, 57, 70, 0.9);
+            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--gray-light-text);
+            transition: var(--transition);
+        }
+
+            .play-button i {
+                color: white;
+                font-size: 2rem;
+                margin-left: 5px;
+            }
+
+        .video-thumbnail:hover .play-button {
+            background: var(--red);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .video-label {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: rgba(10, 10, 10, 0.9);
+            color: white;
+            padding: 10px 15px;
+            border-radius: var(--border-radius);
             font-weight: 600;
-            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+            text-align: center;
+        }
+
+        .gallery-item:hover .gallery-placeholder {
+            transform: translateY(0);
+            opacity: 1;
         }
 
         /* Footer */
@@ -750,6 +822,22 @@
             .two-column {
                 grid-template-columns: 1fr;
             }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-item:nth-child(1),
+            .gallery-item:nth-child(2),
+            .gallery-item:nth-child(3) {
+                aspect-ratio: 4 / 5;
+            }
+
+            .gallery-item:nth-child(4),
+            .gallery-item:nth-child(5),
+            .gallery-item:nth-child(6) {
+                aspect-ratio: 9 / 16;
+            }
         }
 
         @media (max-width: 576px) {
@@ -791,7 +879,7 @@
     <header id="header">
         <div class="container nav-container">
             <a href="../index.html" class="logo">
-                <img src="https://i.ibb.co/8LLgMHry/logo-huna-1.webp" alt="Huna Estudios - Agencia de Marketing Digital en Quito, Ecuador" loading="eager" width="112" height="28">
+                <img src="../assets/img/global/logo-huna-1.webp" alt="Huna Estudios - Agencia de Marketing Digital en Quito, Ecuador" loading="eager" width="112" height="28">
             </a>
             <div class="nav-content">
                 <a href="../index.html#contact" class="btn">Contáctanos</a>
@@ -879,7 +967,7 @@
                     </ul>
                 </div>
                 <div class="column-image">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Cliente" loading="lazy">
+                    <img src="../assets/img/portafolio/ue-verbo/quien-es-ue-verbo.webp" alt="Cliente UE Verbo" loading="lazy">
                 </div>
             </div>
         </div>
@@ -919,23 +1007,58 @@
                 <p>Selección de trabajos visuales más impactantes de la campaña</p>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80')">
-                    <div class="gallery-placeholder">Social Media Post</div>
+                <!-- Primera imagen -->
+                <div class="gallery-item"
+                     style="background-image: url('../assets/img/portafolio/ue-verbo/ue-verbo-1.webp'); "
+                     aria-label="Presentación de los niños">
+                    <div class="gallery-placeholder">Presentación de los niños</div>
                 </div>
-                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80')">
-                    <div class="gallery-placeholder">Display Ad</div>
+
+                <!-- Segunda imagen -->
+                <div class="gallery-item"
+                     style="background-image: url('../assets/img/portafolio/ue-verbo/ue-verbo-2.webp'); "
+                     aria-label="Matrículas abiertas">
+                    <div class="gallery-placeholder">Matrículas abiertas</div>
                 </div>
-                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80')">
-                    <div class="gallery-placeholder">Video Campaign</div>
+
+                <!-- Tercera imagen -->
+                <div class="gallery-item"
+                     style="background-image: url('../assets/img/portafolio/ue-verbo/ue-verbo-3.webp'); "
+                     aria-label="Devocionales">
+                    <div class="gallery-placeholder">Devocionales</div>
                 </div>
-                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1634942537034-2531766767d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1228&q=80')">
-                    <div class="gallery-placeholder">Brand Identity</div>
+
+                <!-- Primer video -->
+                <div class="gallery-item video-item">
+                    <iframe src="https://www.youtube.com/embed/trI9DhhGM4A?rel=0&modestbranding =1&vq =hd1080"
+                            title="Pasantes Americanas"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            loading="lazy">
+                    </iframe>
                 </div>
-                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80')">
-                    <div class="gallery-placeholder">Email Template</div>
+
+                <!-- Segundo video -->
+                <div class="gallery-item video-item">
+                    <iframe src="https://www.youtube.com/embed/xLb4JgQr6iU?rel=0&modestbranding =1&vq =hd1080"
+                            title="Concurso de oratoria"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            loading="lazy">
+                    </iframe>
                 </div>
-                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1558655146-364adaf1fcc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80')">
-                    <div class="gallery-placeholder">Landing Page</div>
+
+                <!-- Tercer video -->
+                <div class="gallery-item video-item">
+                    <iframe src="https://www.youtube.com/embed/WwmzQz0kDcA?rel=0&modestbranding =1&vq =hd1080"
+                            title="Matrículas Verbo"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            loading="lazy">
+                    </iframe>
                 </div>
             </div>
         </div>
@@ -1050,4 +1173,3 @@
     </script>
 </body>
 </html>
-```

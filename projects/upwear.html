@@ -17,7 +17,7 @@
     <meta property="og:url" content="https://hunaestudios.github.io/">
     <meta property="og:title" content="UpWear - Huna Estudios">
     <meta property="og:description" content="Proyecto de publicidad digital que revolucionó la presencia de marca del cliente">
-    <meta property="og:image" content="https://i.ibb.co/hFhS8LkF/upwear-portafolio.webp">
+    <meta property="og:image" content="https://hunaestudios.github.io/assets/img/portafolio/covers/upwear-portafolio.webp">
     <meta property="og:image:alt" content="UpWear - Huna Estudios">
     <meta property="og:site_name" content="Huna Estudios">
     <meta property="og:locale" content="es_EC">
@@ -26,18 +26,19 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="UpWear | Huna Estudios">
     <meta name="twitter:description" content="Proyecto de publicidad digital que revolucionó la presencia de marca del cliente">
-    <meta name="twitter:image" content="https://i.ibb.co/hFhS8LkF/upwear-portafolio.webp">
+    <meta name="twitter:image" content="https://hunaestudios.github.io/assets/img/portafolio/covers/upwear-portafolio.webp">
 
-    <!-- Favicon y preloads críticos -->
-    <link rel="icon" type="image/webp" href="https://i.ibb.co/xtQTkZQV/huna-estudios-favicon.webp">
-    <link rel="preload" href="https://i.ibb.co/hFhS8LkF/upwear-portafolio.webp" as="image" media="(min-width: 768px)">
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="../assets/img/global/huna-estudios-favicon.webp">
+
+    <!-- Preloads -->
+    <link rel="preload" href="../assets/img/portafolio/covers/upwear-portafolio.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="../assets/img/global/logo-huna-1.webp" as="image">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <!-- Preconnect -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://i.ibb.co">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    <link rel="dns-prefetch" href="https://i.ibb.co">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
@@ -45,54 +46,42 @@
     <!-- Schema.org -->
     <script type="application/ld+json">
         {
-            "@context": "https://schema.org",
-            "@type": "MarketingAgency",
+          "@context": "https://schema.org",
+          "@type": "Project",
+          "name": "UpWear",
+          "description": "Branding y creación de marca desde cero, priorizando la fotografía para una nueva marca de ropa en Quito.",
+          "url": "https://hunaestudios.github.io/projects/upwear.html",
+          "image": [
+            "https://hunaestudios.github.io/assets/img/portafolio/covers/upwear-portafolio.webp"
+          ],
+          "creator": {
+            "@type": "Organization",
             "name": "Huna Estudios",
             "url": "https://hunaestudios.github.io/",
-            "logo": "https://i.ibb.co/8LLgMHry/logo-huna-1.webp",
-            "description": "Agencia de marketing digital en Quito, Ecuador especializada en gestión de redes sociales, creación de contenido, fotografía y estrategias integradas para PYMES.",
-            "address": {
+            "logo": "https://hunaestudios.github.io/assets/img/global/logo-huna-1.webp"
+          },
+          "isPartOf": {
+            "@type": "CollectionPage",
+            "name": "Portafolio - Huna Estudios",
+            "url": "https://hunaestudios.github.io/portafolio.html"
+          },
+          "about": {
+            "@type": "Brand",
+            "name": "UpWear",
+            "description": "Marca de ropa deportiva y casual",
+            "location": {
+              "@type": "Place",
+              "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Quito",
-                "addressRegion": "Pichincha",
-                "addressCountry": "EC",
-                "postalCode": "170135"
-            },
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+593-98-841-4057",
-                "contactType": "customer service",
-                "email": "hunaestudios@gmail.com",
-                "areaServed": "EC",
-                "availableLanguage": ["Spanish", "English"]
-            },
-            "areaServed": "Ecuador",
-            "serviceType": "Digital Marketing Services",
-            "sameAs": [
-                "https://www.instagram.com/hunaestudios",
-                "https://www.linkedin.com/company/huna-estudios",
-                "https://www.facebook.com/hunaestudios",
-                "https://www.tiktok.com/@hunaestudios"
-            ],
-            "founder": [
-                {
-                    "@type": "Person",
-                    "name": "Cristian Alarcón"
-                },
-                {
-                    "@type": "Person",
-                    "name": "Samuel Castellano"
-                }
-            ],
-            "foundingDate": "2022",
-            "employees": "5-10",
-            "priceRange": "$$",
-            "currenciesAccepted": "USD"
+                "addressCountry": "EC"
+              }
+            }
+          }
         }
     </script>
 
     <style>
-        /* CSS Variables - Huna Estudios Style */
         :root {
             --black: #0a0a0a;
             --red: #e63946;
@@ -291,7 +280,7 @@
             min-height: 100vh;
             display: flex;
             align-items: center;
-            background: linear-gradient(135deg, rgba(230, 57, 70, 0.8) 0%, rgba(214, 40, 40, 0.8) 100%), url(' https://i.ibb.co/hFhS8LkF/upwear-portafolio.webp ');
+            background: linear-gradient(135deg, rgba(230, 57, 70, 0.8) 0%, rgba(214, 40, 40, 0.8) 100%), url(' ../assets/img/portafolio/covers/upwear-portafolio.webp ');
             background-size: cover;
             background-position: top;
             background-attachment: fixed;
@@ -341,7 +330,7 @@
             margin: 0 auto;
         }
 
-        /* Bento Grid Section - MODIFICADO */
+        /* Bento Grid Section */
         .bento-section {
             background-color: var(--black);
             padding: 80px 0;
@@ -385,7 +374,6 @@
             font-size: 1.1rem;
         }
 
-        /* NUEVO GRID SIMÉTRICO CON ORIENTACIÓN CONSISTENTE */
         .symmetrical-grid {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
@@ -420,20 +408,19 @@
                 transform: scale(1.05);
             }
 
-            /* Estructura del grid */
             .grid-item.full-width {
                 grid-column: 1 / -1;
-                aspect-ratio: 16 / 9; /* Horizontal - mantiene relación de aspecto */
+                aspect-ratio: 16 / 9;
             }
 
             .grid-item.half-width {
                 grid-column: span 3;
-                aspect-ratio: 16 / 9; /* Horizontal - mantiene relación de aspecto */
+                aspect-ratio: 16 / 9; 
             }
 
             .grid-item.vertical {
                 grid-column: span 2;
-                aspect-ratio: 3 / 4; /* Vertical - relación 3:4 (ligeramente vertical) */
+                aspect-ratio: 3 / 4; 
             }
 
         .grid-caption {
@@ -510,7 +497,7 @@
                 transform: translateY(-3px);
             }
 
-        /* Responsive Design - MEJORADO */
+        /* Responsive Design */
         @media (max-width: 992px) {
             .symmetrical-grid {
                 grid-template-columns: repeat(4, 1fr);
@@ -518,17 +505,17 @@
 
             .grid-item.full-width {
                 grid-column: 1 / -1;
-                aspect-ratio: 16 / 9; /* Mantiene horizontal */
+                aspect-ratio: 16 / 9;
             }
 
             .grid-item.half-width {
                 grid-column: span 2;
-                aspect-ratio: 16 / 9; /* Mantiene horizontal */
+                aspect-ratio: 16 / 9; 
             }
 
             .grid-item.vertical {
                 grid-column: span 2;
-                aspect-ratio: 3 / 4; /* Mantiene vertical */
+                aspect-ratio: 3 / 4; 
             }
         }
 
@@ -608,18 +595,15 @@
             .grid-item.half-width,
             .grid-item.vertical {
                 grid-column: 1;
-                /* Mantenemos las proporciones usando aspect-ratio */
             }
 
-            /* Aseguramos que las imágenes horizontales mantengan su formato */
             .grid-item.full-width,
             .grid-item.half-width {
-                aspect-ratio: 16 / 9; /* Horizontal */
+                aspect-ratio: 16 / 9;
             }
 
-            /* Aseguramos que las imágenes verticales mantengan su formato */
             .grid-item.vertical {
-                aspect-ratio: 3 / 4; /* Vertical */
+                aspect-ratio: 3 / 4; 
             }
 
             .scroll-to-top {
@@ -660,7 +644,7 @@
     <header id="header">
         <div class="container nav-container">
             <a href="../index.html" class="logo">
-                <img src="https://i.ibb.co/8LLgMHry/logo-huna-1.webp" alt="Huna Estudios - Agencia de Marketing Digital en Quito, Ecuador" loading="eager" width="112" height="28">
+                <img src="../assets/img/global/logo-huna-1.webp" alt="Huna Estudios - Agencia de Marketing Digital en Quito, Ecuador" loading="eager" width="112" height="28">
             </a>
             <div class="nav-content">
                 <a href="../index.html#contact" class="btn">Contáctanos</a>
@@ -690,7 +674,7 @@
         </div>
     </section>
 
-    <!-- Grid Simétrico con orientación consistente -->
+    <!-- Bento Grid -->
     <section class="bento-section">
         <div class="container">
             <div class="section-header">
@@ -700,7 +684,7 @@
             </div>
 
             <div class="symmetrical-grid">
-                <!-- Fila 1: Una imagen horizontal completa -->
+                <!-- Fila 1 -->
                 <div class="grid-item full-width">
                     <img src="https://i.ibb.co/rGKRBHJK/presentaci-n-upwear.webp" alt="Presentación de marca">
                     <div class="grid-caption">
@@ -709,62 +693,62 @@
                     </div>
                 </div>
 
-                <!-- Fila 2: Dos imágenes horizontales -->
+                <!-- Fila 2 -->
                 <div class="grid-item half-width">
-                    <img src="https://i.ibb.co/LhNjBGVW/camiseta-nike.webp" alt="Camiseta Nike">
+                    <img src="../assets/img/portafolio/upwear/camiseta-nike.webp" alt="Camiseta Nike">
                     <div class="grid-caption">
                         <h3>Transmitir valores</h3>
                         <p>Ropa original y de calidad</p>
                     </div>
                 </div>
                 <div class="grid-item half-width">
-                    <img src="https://i.ibb.co/cXxgQXvn/zapatilla-puma.webp" alt="Zapatilla Puma">
+                    <img src="../assets/img/portafolio/upwear/zapatilla-puma.webp" alt="Zapatilla Puma">
                     <div class="grid-caption">
                         <h3>Trabajo fotográfico</h3>
                         <p>Con garantía de excelente calidad</p>
                     </div>
                 </div>
 
-                <!-- Fila 3: Tres imágenes verticales -->
+                <!-- Fila 3 -->
                 <div class="grid-item vertical">
-                    <img src="https://i.ibb.co/9HWzWmm6/ropa-upwear-1.webp" alt="Ropa Upwear 1">
+                    <img src="../assets/img/portafolio/upwear/ropa-upwear-1.webp" alt="Ropa Upwear 1">
                     <div class="grid-caption">
                         <h3>Conjunto deportivo</h3>
                         <p>Marca Adidas</p>
                     </div>
                 </div>
                 <div class="grid-item vertical">
-                    <img src="https://i.ibb.co/jkNP8Fz7/ropa-upwear-2.webp" alt="Ropa Upwear 2">
+                    <img src="../assets/img/portafolio/upwear/ropa-upwear-2.webp" alt="Ropa Upwear 2">
                     <div class="grid-caption">
                         <h3>Tres piezas</h3>
                         <p>Marca Adidas</p>
                     </div>
                 </div>
                 <div class="grid-item vertical">
-                    <img src="https://i.ibb.co/9mHSwXt5/ropa-upwear-3.webp" alt="Ropa Upwear 3">
+                    <img src="../assets/img/portafolio/upwear/ropa-upwear-3.webp" alt="Ropa Upwear 3">
                     <div class="grid-caption">
                         <h3>Modelo masculino</h3>
                         <p>Nike x Nautica</p>
                     </div>
                 </div>
 
-                <!-- Fila 4: Tres imágenes verticales -->
+                <!-- Fila 4 -->
                 <div class="grid-item vertical">
-                    <img src="https://i.ibb.co/C5Lynwdz/ropa-upwear-4.webp" alt="Ropa Upwear 4">
+                    <img src="../assets/img/portafolio/upwear/ropa-upwear-4.webp" alt="Ropa Upwear 4">
                     <div class="grid-caption">
                         <h3>Zapatillas</h3>
                         <p>Adidas</p>
                     </div>
                 </div>
                 <div class="grid-item vertical">
-                    <img src="https://i.ibb.co/nq9XQ91G/ropa-upwear-6.webp" alt="Ropa Upwear 6">
+                    <img src="../assets/img/portafolio/upwear/ropa-upwear-6.webp" alt="Ropa Upwear 6">
                     <div class="grid-caption">
                         <h3>Modelaje</h3>
                         <p>Under Armour</p>
                     </div>
                 </div>
                 <div class="grid-item vertical">
-                    <img src="https://i.ibb.co/FkRQDLNW/ropa-upwear-5.webp" alt="Ropa Upwear 5">
+                    <img src="../assets/img/portafolio/upwear/ropa-upwear-5.webp" alt="Ropa Upwear 5">
                     <div class="grid-caption">
                         <h3>Ropa deportiva</h3>
                         <p>Under Armour x Adidas</p>

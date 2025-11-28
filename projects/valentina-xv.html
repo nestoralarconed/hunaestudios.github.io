@@ -17,7 +17,7 @@
     <meta property="og:url" content="https://hunaestudios.github.io/">
     <meta property="og:title" content="Valentina XV - Huna Estudios">
     <meta property="og:description" content="Proyecto de publicidad digital que revolucionó la presencia de marca del cliente">
-    <meta property="og:image" content="https://i.ibb.co/Df7ttdYp/Valentina-XV.webp">
+    <meta property="og:image" content="https://hunaestudios.github.io/assets/img/portafolio/covers/Valentina-XV.webp">
     <meta property="og:image:alt" content="Valentina XV - Huna Estudios">
     <meta property="og:site_name" content="Huna Estudios">
     <meta property="og:locale" content="es_EC">
@@ -26,18 +26,19 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Valentina XV | Huna Estudios">
     <meta name="twitter:description" content="Proyecto de publicidad digital que revolucionó la presencia de marca del cliente">
-    <meta name="twitter:image" content="https://i.ibb.co/Df7ttdYp/Valentina-XV.webp">
+    <meta name="twitter:image" content="https://hunaestudios.github.io/assets/img/portafolio/covers/Valentina-XV.webp">
 
-    <!-- Favicon y preloads críticos -->
-    <link rel="icon" type="image/webp" href="https://i.ibb.co/xtQTkZQV/huna-estudios-favicon.webp">
-    <link rel="preload" href="https://i.ibb.co/Df7ttdYp/Valentina-XV.webp" as="image" media="(min-width: 768px)">
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="../assets/img/global/huna-estudios-favicon.webp">
+
+    <!-- Preloads -->
+    <link rel="preload" href="../assets/img/portafolio/covers/Valentina-XV.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="../assets/img/global/logo-huna-1.webp" as="image">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
     <!-- Preconnect -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://i.ibb.co">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    <link rel="dns-prefetch" href="https://i.ibb.co">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
@@ -45,54 +46,41 @@
     <!-- Schema.org -->
     <script type="application/ld+json">
         {
-            "@context": "https://schema.org",
-            "@type": "MarketingAgency",
+          "@context": "https://schema.org",
+          "@type": "Project",
+          "name": "Valentina XV",
+          "description": "Sesión fotográfica profesional para celebración de XV años en Quito, Ecuador.",
+          "url": "https://hunaestudios.github.io/projects/valentina-xv.html",
+          "image": [
+            "https://hunaestudios.github.io/assets/img/portafolio/covers/Valentina-XV.webp"
+          ],
+          "creator": {
+            "@type": "Organization",
             "name": "Huna Estudios",
             "url": "https://hunaestudios.github.io/",
-            "logo": "https://i.ibb.co/8LLgMHry/logo-huna-1.webp",
-            "description": "Agencia de marketing digital en Quito, Ecuador especializada en gestión de redes sociales, creación de contenido, fotografía y estrategias integradas para PYMES.",
-            "address": {
+            "logo": "https://hunaestudios.github.io/assets/img/global/logo-huna-1.webp"
+          },
+          "isPartOf": {
+            "@type": "CollectionPage",
+            "name": "Portafolio - Huna Estudios",
+            "url": "https://hunaestudios.github.io/portafolio.html"
+          },
+          "about": {
+            "@type": "Event",
+            "name": "Sesión de fotos de XV años",
+            "location": {
+              "@type": "Place",
+              "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Quito",
-                "addressRegion": "Pichincha",
-                "addressCountry": "EC",
-                "postalCode": "170135"
-            },
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+593-98-841-4057",
-                "contactType": "customer service",
-                "email": "hunaestudios@gmail.com",
-                "areaServed": "EC",
-                "availableLanguage": ["Spanish", "English"]
-            },
-            "areaServed": "Ecuador",
-            "serviceType": "Digital Marketing Services",
-            "sameAs": [
-                "https://www.instagram.com/hunaestudios",
-                "https://www.linkedin.com/company/huna-estudios",
-                "https://www.facebook.com/hunaestudios",
-                "https://www.tiktok.com/@hunaestudios"
-            ],
-            "founder": [
-                {
-                    "@type": "Person",
-                    "name": "Cristian Alarcón"
-                },
-                {
-                    "@type": "Person",
-                    "name": "Samuel Castellano"
-                }
-            ],
-            "foundingDate": "2022",
-            "employees": "5-10",
-            "priceRange": "$$",
-            "currenciesAccepted": "USD"
+                "addressCountry": "EC"
+              }
+            }
+          }
         }
     </script>
 
     <style>
-        /* CSS Variables - Huna Estudios Style */
         :root {
             --black: #0a0a0a;
             --red: #e63946;
@@ -291,7 +279,7 @@
             min-height: 100vh;
             display: flex;
             align-items: center;
-            background: linear-gradient(135deg, rgba(230, 57, 70, 0.8) 0%, rgba(214, 40, 40, 0.8) 100%), url(' https://i.ibb.co/Df7ttdYp/Valentina-XV.webp ');
+            background: linear-gradient(135deg, rgba(230, 57, 70, 0.8) 0%, rgba(214, 40, 40, 0.8) 100%), url(' ../assets/img/portafolio/covers/Valentina-XV.webp ');
             background-size: cover;
             background-position: top;
             background-attachment: fixed;
@@ -385,7 +373,6 @@
             font-size: 1.1rem;
         }
 
-        /* NUEVO GRID SIMÉTRICO CON ORIENTACIÓN CONSISTENTE */
         .symmetrical-grid {
             display: grid;
             grid-template-columns: repeat(6, 1fr);
@@ -420,20 +407,19 @@
                 transform: scale(1.05);
             }
 
-            /* Estructura del grid */
             .grid-item.full-width {
                 grid-column: 1 / -1;
-                aspect-ratio: 16 / 9; /* Horizontal - mantiene relación de aspecto */
+                aspect-ratio: 16 / 9; 
             }
 
             .grid-item.half-width {
                 grid-column: span 3;
-                aspect-ratio: 16 / 9; /* Horizontal - mantiene relación de aspecto */
+                aspect-ratio: 16 / 9; 
             }
 
             .grid-item.vertical {
                 grid-column: span 2;
-                aspect-ratio: 3 / 4; /* Vertical - relación 3:4 (ligeramente vertical) */
+                aspect-ratio: 3 / 4; 
             }
 
         .grid-caption {
@@ -510,7 +496,7 @@
                 transform: translateY(-3px);
             }
 
-        /* Responsive Design - MEJORADO */
+        /* Responsive Design */
         @media (max-width: 992px) {
             .symmetrical-grid {
                 grid-template-columns: repeat(4, 1fr);
@@ -518,17 +504,17 @@
 
             .grid-item.full-width {
                 grid-column: 1 / -1;
-                aspect-ratio: 16 / 9; /* Mantiene horizontal */
+                aspect-ratio: 16 / 9; 
             }
 
             .grid-item.half-width {
                 grid-column: span 2;
-                aspect-ratio: 16 / 9; /* Mantiene horizontal */
+                aspect-ratio: 16 / 9; 
             }
 
             .grid-item.vertical {
                 grid-column: span 2;
-                aspect-ratio: 3 / 4; /* Mantiene vertical */
+                aspect-ratio: 3 / 4; 
             }
         }
 
@@ -608,18 +594,15 @@
             .grid-item.half-width,
             .grid-item.vertical {
                 grid-column: 1;
-                /* Mantenemos las proporciones usando aspect-ratio */
             }
 
-            /* Aseguramos que las imágenes horizontales mantengan su formato */
             .grid-item.full-width,
             .grid-item.half-width {
-                aspect-ratio: 16 / 9; /* Horizontal */
+                aspect-ratio: 16 / 9; 
             }
 
-            /* Aseguramos que las imágenes verticales mantengan su formato */
             .grid-item.vertical {
-                aspect-ratio: 3 / 4; /* Vertical */
+                aspect-ratio: 3 / 4; 
             }
 
             .scroll-to-top {
@@ -660,7 +643,7 @@
     <header id="header">
         <div class="container nav-container">
             <a href="../index.html" class="logo">
-                <img src="https://i.ibb.co/8LLgMHry/logo-huna-1.webp" alt="Huna Estudios - Agencia de Marketing Digital en Quito, Ecuador" loading="eager" width="112" height="28">
+                <img src="../assets/img/global/logo-huna-1.webp" alt="Huna Estudios - Agencia de Marketing Digital en Quito, Ecuador" loading="eager" width="112" height="28">
             </a>
             <div class="nav-content">
                 <a href="../index.html#contact" class="btn">Contáctanos</a>
@@ -690,7 +673,7 @@
         </div>
     </section>
 
-    <!-- Grid Simétrico con orientación consistente -->
+    <!-- Bento Grid -->
     <section class="bento-section">
         <div class="container">
             <div class="section-header">
@@ -702,60 +685,60 @@
             <div class="symmetrical-grid">
                 <!-- Fila 1 -->
                 <div class="grid-item full-width">
-                    <img src="https://i.ibb.co/23S4VZjL/Valentina-1.webp" alt="Valentina 1">
+                    <img src="../assets/img/portafolio/valentina-xv/Valentina-1.webp" alt="Valentina 1">
                     <div class="grid-caption">
                     </div>
                 </div>
 
                 <!-- Fila 2 -->
                 <div class="grid-item half-width">
-                    <img src="https://i.ibb.co/Pz58SWcN/Valentina-2.webp" alt="Valentina 2">
+                    <img src="../assets/img/portafolio/valentina-xv/Valentina-2.webp" alt="Valentina 2">
                     <div class="grid-caption">
                     </div>
                 </div>
                 <div class="grid-item half-width">
-                    <img src="https://i.ibb.co/cXJMfGn5/Valentina-3.webp" alt="Valentina 3">
+                    <img src="../assets/img/portafolio/valentina-xv/Valentina-3.webp" alt="Valentina 3">
                     <div class="grid-caption">
                     </div>
                 </div>
 
                 <!-- Fila 3 -->
                 <div class="grid-item half-width">
-                    <img src="https://i.ibb.co/KxMsZ4rp/Valentina-4.webp" alt="Valentina 4">
+                    <img src="../assets/img/portafolio/valentina-xv/Valentina-4.webp" alt="Valentina 4">
                     <div class="grid-caption">
                     </div>
                 </div>
                 <div class="grid-item half-width">
-                    <img src="https://i.ibb.co/Df3L63Q1/Valentina-5.webp" alt="Valentina 5">
+                    <img src="../assets/img/portafolio/valentina-xv/Valentina-5.webp" alt="Valentina 5">
                     <div class="grid-caption">
                     </div>
                 </div>
 
                 <!-- Fila 4 -->
                 <div class="grid-item vertical">
-                    <img src="https://i.ibb.co/svhJjLMx/Valentina-6.webp" alt="Valentina 6">
+                    <img src="../assets/img/portafolio/valentina-xv/Valentina-6.webp" alt="Valentina 6">
                     <div class="grid-caption">
                     </div>
                 </div>
                 <div class="grid-item vertical">
-                    <img src="https://i.ibb.co/ZZvXw4P/Valentina-7.webp" alt="Valentina 7">
+                    <img src="../assets/img/portafolio/valentina-xv/Valentina-7.webp" alt="Valentina 7">
                     <div class="grid-caption">
                     </div>
                 </div>
                 <div class="grid-item vertical">
-                    <img src="https://i.ibb.co/bR2JLPbh/Valentina-8.webp" alt="Valentina 8">
+                    <img src="../assets/img/portafolio/valentina-xv/Valentina-8.webp" alt="Valentina 8">
                     <div class="grid-caption">
                     </div>
                 </div>
 
                 <!-- Fila 5 -->
                 <div class="grid-item half-width">
-                    <img src="https://i.ibb.co/27m47s30/Valentina-9.webp" alt="Valentina 9">
+                    <img src="../assets/img/portafolio/valentina-xv/Valentina-9.webp" alt="Valentina 9">
                     <div class="grid-caption">
                     </div>
                 </div>
                 <div class="grid-item half-width">
-                    <img src="https://i.ibb.co/S4Ppwd9F/Valentina-10.webp" alt="Valentina 10">
+                    <img src="../assets/img/portafolio/valentina-xv/Valentina-10.webp" alt="Valentina 10">
                     <div class="grid-caption">
                     </div>
                 </div>
