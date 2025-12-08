@@ -809,18 +809,20 @@
             text-align: center;
         }
 
-        .contact-data {
-            display: flex;
-            justify-content: center;
-            gap: 60px;
-            margin-bottom: 20px;
-        }
-
         .contact-item {
             display: flex;
             flex-direction: column;
             align-items: center;
-            max-width: 250px;
+            max-width: 280px; 
+            min-width: 280px; 
+        }
+
+        .contact-data {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; 
+            gap: 60px;
+            margin-bottom: 20px;
         }
 
         .contact-icon {
@@ -870,7 +872,6 @@
                 transform: translateY(-3px);
             }
 
-        /* Estilos para enlaces de contacto */
         .contact-link {
             color: var(--gray-text);
             text-decoration: none;
@@ -1327,17 +1328,17 @@
                     <img src="assets/img/index/expertos-en-marketing.webp" alt="Equipo de Huna Estudios colaborando en estrategia de marketing integrado para clientes" width="600" height="400" loading="lazy">
                 </div>
                 <div class="about-text">
-                    <h3>Expertos en Marketing Integrado</h3>
-                    <p>En Huna Estudios nos integramos como parte de tu organización, trabajando codo a codo con tu equipo para desarrollar estrategias que generen resultados tangibles. No somos una agencia externa, somos tu NUEVO departamento de marketing.</p>
+                    <h3>Expertos en Marketing y Comunicación</h3>
+                    <p>En Huna Estudios trabajamos junto a tu equipo para crear estrategias que realmente generen resultados. No llegamos como una agencia distante: nos adaptamos a tus necesidades, entendemos tu marca y colaboramos de forma cercana. Somos una agencia externa, pero nos integramos a tus metas.</p>
                     <p>Nuestro enfoque colaborativo nos permite entender profundamente tu negocio y crear campañas que realmente conectan con tu audiencia y potencian tu crecimiento.</p>
 
                     <div class="stats">
                         <div class="stat-item">
-                            <span class="stat-number" data-count="80">0</span>
+                            <span class="stat-number" data-count="60">0</span>
                             <span class="stat-text">Proyectos Completados</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number" data-count="40">0</span>
+                            <span class="stat-number" data-count="30">0</span>
                             <span class="stat-text">Clientes Satisfechos</span>
                         </div>
                         <div class="stat-item">
@@ -1369,21 +1370,21 @@
                         <i class="fas fa-pen-fancy"></i>
                     </div>
                     <h3>Creación de Contenido</h3>
-                    <p>Desarrollamos contenido de valor que posiciona tu marca como referente en tu sector y conecta con tu audiencia objetivo.</p>
+                    <p>Desarrollamos contenido de valor y de alta calidad que posiciona tu marca como referente en tu sector y conecta con tu audiencia objetivo.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-camera"></i>
                     </div>
-                    <h3>Fotografía</h3>
-                    <p>Capturamos imágenes profesionales que reflejan la esencia de tu marca y mejoran tu presencia visual en todos los canales.</p>
+                    <h3>Fotografía Profesional</h3>
+                    <p>Entregamos imágenes profesionales de producto, marca, eventos sociales y cualquier ámbito que requieras para tus necesidades.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-bullhorn"></i>
                     </div>
                     <h3>Pautaje Publicitario</h3>
-                    <p>Diseñamos y ejecutamos campañas publicitarias efectivas en redes sociales y medios digitales para maximizar tu ROI.</p>
+                    <p>Diseñamos y ejecutamos campañas publicitarias efectivas en redes sociales y medios digitales para maximizar el retorno de tu inversión.</p>
                 </div>
             </div>
         </div>
@@ -1469,7 +1470,7 @@
                     <div class="testimonial-avatar">
                         <img src="assets/img/index/testimonios/jj.webp" alt="Jhamy Carillo - Asesora comercial Libertadores de América testimonio Huna Estudios" width="80" height="80" loading="lazy">
                     </div>
-                    <p class="testimonial-text">"Me encantó trabajar con Huna. Son súper atentos, creativos y siempre tienen buenas ideas para mejorar los proyectos. Se nota que les apasiona lo que hacen, realmente se preocupan por que todo salga bien, y se esfuerzan porque los resultados vayan de la mano con las ideas de los clientes. ¡Los recomiendo totalmente!"</p>
+                    <p class="testimonial-text">"Me encantó trabajar con Huna. Son súper atentos, creativos y siempre tienen buenas ideas para mejorar los proyectos. Se nota que les apasiona lo que hacen, realmente se preocupan por que todo salga bien, y se esfuerzan porque los resultados vayan de la mano con las ideas de los clientes."</p>
                     <h4 class="testimonial-author">Jhamy Carillo</h4>
                     <p class="testimonial-role">Asesora comercial de <a href="https://www.instagram.com/libertadoresdeamericaec/" target="_blank" rel="noopener noreferrer" style="color: var(--red); text-decoration: none; font-weight: 600; transition: var(--transition);">Libertadores de américa</a></p>
                 </div>
@@ -1508,16 +1509,6 @@
                 <div class="contact-info">
                     <div class="contact-data">
                         <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Ubicación</h3>
-                                <p>Quito, Ecuador</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
                             <a href="mailto:hunaestudios@gmail.com" class="contact-icon-link" target="_blank" rel="noopener noreferrer">
                                 <div class="contact-icon">
                                     <i class="fas fa-envelope"></i>
@@ -1528,6 +1519,20 @@
                                     <h3>Email</h3>
                                 </a>
                                 <p><a href="mailto:hunaestudios@gmail.com" class="contact-link" target="_blank" rel="noopener noreferrer">hunaestudios@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <a href="https://maps.app.goo.gl/heVEKRDS7vgfWunK8" class="contact-icon-link" target="_blank" rel="noopener noreferrer">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                            </a>
+                            <div class="contact-details">
+                                <a href="https://maps.app.goo.gl/heVEKRDS7vgfWunK8" class="contact-title-link" target="_blank" rel="noopener noreferrer">
+                                    <h3>Ubicación</h3>
+                                </a>
+                                <p><a href="https://maps.app.goo.gl/heVEKRDS7vgfWunK8" class="contact-link" target="_blank" rel="noopener noreferrer">Eloy Alfaro e Inglaterra<br>Edificio Eloy Alfaro, Of. 203</a></p>
                             </div>
                         </div>
 
